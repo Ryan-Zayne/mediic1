@@ -41,6 +41,56 @@
 		<link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet" />
 
 		<link rel="stylesheet" href="assets/css/aos.css" />
+
+		<!-- Custom About Page Styles -->
+		<style>
+			.achievement-item {
+				background: #ffffff;
+				padding: 30px;
+				border-radius: 10px;
+				box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+				margin-bottom: 30px;
+				transition: all 0.3s ease;
+				border-left: 4px solid #007bff;
+			}
+
+			.achievement-item:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+			}
+
+			.achievement-item h4 {
+				color: #333;
+				font-weight: 600;
+				margin-bottom: 10px;
+				font-size: 1.2rem;
+			}
+
+			.achievement-year {
+				color: #007bff;
+				font-weight: 700;
+				font-size: 1.1rem;
+				margin-bottom: 15px;
+			}
+
+			.achievement-item p {
+				color: #666;
+				line-height: 1.6;
+				margin-bottom: 0;
+			}
+
+			@media (max-width: 768px) {
+				.achievement-item {
+					padding: 20px;
+					margin-bottom: 20px;
+				}
+
+				.achievement-item h4 {
+					font-size: 1.1rem;
+				}
+			}
+		</style>
+		<!-- End Custom About Page Styles -->
 	</head>
 	<body>
 		<!-- loder -->
@@ -218,12 +268,12 @@
 						<div class="row">
 							<div class="col-lg-12">
 								<div class="breatcome-content text-center">
-									<h1 class="cursor-scale">About Us</h1>
+									<h1 class="cursor-scale">About Iyienu Mission Hospital</h1>
 									<ul class="breatcome-item">
 										<li>
-											<a class="cursor-scale small" href="index.html"> mediic </a>
+											<a class="cursor-scale small" href="index.html"> Home </a>
 										</li>
-										<li>About Us</li>
+										<li>About</li>
 									</ul>
 								</div>
 							</div>
@@ -235,7 +285,7 @@
 				<!--==================================================-->
 
 				<!--==================================================-->
-				<!-- Start mediic About Section  -->
+				<!-- Start Who We Are Section  -->
 				<!--==================================================-->
 
 				<div class="about-section style-3 align-items-center">
@@ -243,19 +293,19 @@
 						<div class="row">
 							<div class="col-lg-6">
 								<div class="about-thumb">
-									<img src="assets/images/resource/about3.jpg" alt="img" />
+									<img src="assets/images/resource/about3.jpg" alt="Iyienu Mission Hospital" />
 									<div class="counter-right-side">
 										<div class="counter-single-box bx-1 cursor-scale" data-aos="fade-up">
-											<div class="odometer-wrapper counter-box-title" data-count="275">
+											<div class="odometer-wrapper counter-box-title" data-count="25">
 												<h1 class="odometer"></h1>
-												<h1>K</h1>
+												<h1>+</h1>
 											</div>
 											<div class="counter-desc">
-												<p>Recovered Patients</p>
+												<p>Years of Service</p>
 											</div>
 										</div>
 										<div class="counter-single-box cursor-scale" data-aos="fade-down">
-											<div class="odometer-wrapper counter-box-title" data-count="90">
+											<div class="odometer-wrapper counter-box-title" data-count="100">
 												<h1 class="odometer"></h1>
 												<h1>%</h1>
 											</div>
@@ -268,30 +318,33 @@
 							</div>
 							<div class="col-lg-6" data-aos="fade-up-left">
 								<div class="mediic-section-title">
-									<h4>ABOUT COMPANY</h4>
-									<h1 class="cursor-scale">Best Health Center Since - 2007</h1>
+									<h4>WHO WE ARE</h4>
+									<h1 class="cursor-scale">About Iyienu Mission Hospital</h1>
 									<p>
-										Continually evolve professional intellectual capital without enterprise
-										users. Seamlessly matrix value added e-commerce. Uniquely e-enable
-										innovative technologies via team
+										Iyienu Mission Hospital is one of Nigeria's leading healthcare institutions
+										with an outstanding reputation for delivering excellent clinical services.
+										Since our inception under the current management (1998), we have remained at
+										the forefront of providing and delivering quality patient-centered,
+										responsive, and technology-driven care across various locations in Nigeria
+										to both citizens and foreign nationals.
+									</p>
+									<p>
+										Our integrated health services are wide-ranging, from cardiology and
+										ophthalmology to radio-diagnostics and laboratory services. Our team of
+										highly qualified medical professionals is equipped to provide a
+										comprehensive range of treatments, including minimal access procedures,
+										neonatology, ICU care, and other general medical and surgical services.
+									</p>
+									<p>
+										We are proud to be an accredited center for specialist training in various
+										medical fields, offering internships to medical doctors, radiographers,
+										optometrists, and pharmacists.
 									</p>
 								</div>
-								<div class="row">
-									<div class="col-lg-6 col-md-6">
-										<ul class="about-mediic-services">
-											<li>Psychodynamic Therapy</li>
-											<li>Couple Problem Therapy</li>
-										</ul>
-									</div>
-									<div class="col-lg-6 col-md-6">
-										<ul class="about-mediic-services">
-											<li>Free Consultants</li>
-											<li>Metal Satisfications</li>
-										</ul>
-									</div>
-								</div>
 								<div class="mediic-btn cursor-scale small">
-									<a href="about.html">More About <i class="bi bi-arrow-return-right"></i></a>
+									<a href="service.html"
+										>Our Services <i class="bi bi-arrow-return-right"></i
+									></a>
 								</div>
 							</div>
 							<div class="mediic-shape" data-aos="fade-up-left">
@@ -301,11 +354,11 @@
 					</div>
 				</div>
 				<!--==================================================-->
-				<!-- End mediic About Section  -->
+				<!-- End Who We Are Section  -->
 				<!--==================================================-->
 
 				<!--==================================================-->
-				<!-- Start mediic Mission & Vission Section -->
+				<!-- Start Mission & Vision Section -->
 				<!--==================================================-->
 
 				<div class="mission-vission-section">
@@ -324,8 +377,9 @@
 										</div>
 										<div class="m_v-ssion-desc">
 											<p>
-												Professional mision capital without enterp medical users pros value
-												added e-enable creative technology via team.
+												We promise outstanding care in a friendly environment, delivering
+												quality patient-centered, responsive, and technology-driven healthcare
+												services.
 											</p>
 										</div>
 									</div>
@@ -343,13 +397,14 @@
 												<img src="assets/images/resource/m-icon.png" alt="icon" />
 											</div>
 											<div class="m_v-ssion-title">
-												<h3>Our Planning</h3>
+												<h3>Our Vision</h3>
 											</div>
 										</div>
 										<div class="m_v-ssion-desc">
 											<p>
-												Professional mision capital without enterp medical users pros value
-												added e-enable creative technology via team.
+												To be the leading healthcare institution in Nigeria by delivering
+												exceptional clinical care, training, and research while maintaining
+												the highest standards of medical excellence.
 											</p>
 										</div>
 									</div>
@@ -367,13 +422,14 @@
 												<img src="assets/images/resource/m-icon2.png" alt="icon" />
 											</div>
 											<div class="m_v-ssion-title">
-												<h3>Our Vission</h3>
+												<h3>Core Values</h3>
 											</div>
 										</div>
 										<div class="m_v-ssion-desc">
 											<p>
-												Professional mision capital without enterp medical users pros value
-												added e-enable creative technology via team.
+												Resourcefulness, Kindness, Integrity, and Team Spirit - these values
+												guide our commitment to providing compassionate, ethical, and
+												innovative healthcare solutions.
 											</p>
 										</div>
 									</div>
@@ -388,22 +444,119 @@
 				</div>
 
 				<!--==================================================-->
-				<!-- End mediic Mission And Vission Section -->
+				<!-- End Mission & Vision Section -->
 				<!--==================================================-->
 
 				<!--==================================================-->
-				<!-- Start mediic Testimonial Section  -->
+				<!-- Start Quality Policy Section -->
 				<!--==================================================-->
+
+				<div class="about-section style-3 align-items-center">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12" data-aos="fade-up">
+								<div class="mediic-section-title text-center">
+									<h4>OUR QUALITY POLICY</h4>
+									<h1 class="cursor-scale">Commitment to Excellence</h1>
+									<p>
+										Iyienu Mission Hospital is committed to delivering consistently high quality
+										and patient-centered health care services that meet and exceed the
+										expectations of our customers in compliance with all applicable statutory
+										and regulatory requirements and ensuring the continual improvement of our
+										services in line with international healthcare standards.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--==================================================-->
+				<!-- End Quality Policy Section -->
+				<!--==================================================-->
+
+				<!--==================================================-->
+				<!-- Start Achievements Section -->
+				<!--==================================================-->
+
+				<div class="about-section style-3 align-items-center">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12" data-aos="fade-up">
+								<div class="mediic-section-title text-center">
+									<h4>OUR ACHIEVEMENTS</h4>
+									<h1 class="cursor-scale">Recognition & Accreditations</h1>
+									<p>
+										We are proud of our achievements and recognition as one of Nigeria's leading
+										healthcare institutions, with multiple accreditations and awards for
+										excellence in healthcare delivery.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6 col-md-6" data-aos="fade-up">
+								<div class="achievement-item">
+									<h4>ISO 9001:2015 Quality Management System</h4>
+									<p class="achievement-year">2015</p>
+									<p>
+										Certified for maintaining the highest standards of quality management in
+										healthcare delivery.
+									</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6" data-aos="fade-up">
+								<div class="achievement-item">
+									<h4>Accredited Training Center</h4>
+									<p class="achievement-year">2018</p>
+									<p>
+										Recognized for training medical professionals in various specialties
+										including Family Medicine and Radiology.
+									</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6" data-aos="fade-up">
+								<div class="achievement-item">
+									<h4>Healthcare Excellence Award</h4>
+									<p class="achievement-year">2022</p>
+									<p>
+										Recognized as one of the best private healthcare service providers in
+										Nigeria.
+									</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6" data-aos="fade-up">
+								<div class="achievement-item">
+									<h4>Information Security Management</h4>
+									<p class="achievement-year">2024</p>
+									<p>
+										ISO 27001 certified for maintaining the highest standards of information
+										security in healthcare.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--==================================================-->
+				<!-- End Achievements Section -->
+				<!--==================================================-->
+
+				<!--==================================================-->
+				<!-- Start Customer Experiences Section -->
+				<!--==================================================-->
+
 				<div class="testimonial-section style-2">
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-lg-6" data-aos="zoom-in-right">
 								<div class="mediic-section-title">
-									<h4>OUR TESTIMONIALS</h4>
-									<h1 class="cursor-scale">Our Happy Patients</h1>
+									<h4>CUSTOMER EXPERIENCES</h4>
+									<h1 class="cursor-scale">What Our Patients Say</h1>
 									<p>
-										Professional without enterprisee-commerce. Uniquely happy clinets innovative
-										technologies via team member.
+										We value the feedback from our patients and are committed to continuously
+										improving our services based on their experiences.
 									</p>
 								</div>
 								<div class="testi-list owl-carousel">
@@ -415,8 +568,8 @@
 														<img src="assets/images/resource/people.png" alt="" />
 													</div>
 													<div class="user-name">
-														<h4>Mededi Hassan MH</h4>
-														<h6>satisfi edclient</h6>
+														<h4>Mrs E. Obinna</h4>
+														<h6>Patient</h6>
 													</div>
 													<div class="testi-quote2">
 														<img src="assets/images/resource/quote2.png" alt="icon" />
@@ -425,11 +578,9 @@
 
 												<div class="testi-desc">
 													<p>
-														Commerce end interfaces with collaborative growth strategies
-														wireless recaptiualize one-to-one potentialities through
-														client-focused mediic of web-readiness. Appropriately enhance
-														seamless alignments after team solutions forward growth for
-														corporate web-readiness.
+														We will now use Iyienu Mission Hospital as our main hospital as
+														we got better treatment here than our previous hospitals. Well
+														done to the entire team.
 													</p>
 												</div>
 											</div>
@@ -443,8 +594,8 @@
 														<img src="assets/images/resource/people.png" alt="" />
 													</div>
 													<div class="user-name">
-														<h4>Mededi Hassan MH</h4>
-														<h6>satisfi edclient</h6>
+														<h4>Mrs Abiola</h4>
+														<h6>Patient</h6>
 													</div>
 													<div class="testi-quote2">
 														<img src="assets/images/resource/quote2.png" alt="icon" />
@@ -453,11 +604,10 @@
 
 												<div class="testi-desc">
 													<p>
-														Commerce end interfaces with collaborative growth strategies
-														wireless recaptiualize one-to-one potentialities through
-														client-focused mediic of web-readiness. Appropriately enhance
-														seamless alignments after team solutions forward growth for
-														corporate web-readiness.
+														This is a good place to be for your health needs as the whole
+														unit (front desk, doctors, nurses, and customer service) all
+														work together to attend to our concerns in a fast and
+														professional manner.
 													</p>
 												</div>
 											</div>
@@ -471,8 +621,8 @@
 														<img src="assets/images/resource/people.png" alt="" />
 													</div>
 													<div class="user-name">
-														<h4>Mededi Hassan MH</h4>
-														<h6>satisfi edclient</h6>
+														<h4>Mr. James O.</h4>
+														<h6>Patient</h6>
 													</div>
 													<div class="testi-quote2">
 														<img src="assets/images/resource/quote2.png" alt="icon" />
@@ -481,39 +631,9 @@
 
 												<div class="testi-desc">
 													<p>
-														Commerce end interfaces with collaborative growth strategies
-														wireless recaptiualize one-to-one potentialities through
-														client-focused mediic of web-readiness. Appropriately enhance
-														seamless alignments after team solutions forward growth for
-														corporate web-readiness.
-													</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-12">
-										<div class="testi-single-box">
-											<div class="testi-content-2">
-												<div class="user-info">
-													<div class="people-pic">
-														<img src="assets/images/resource/people.png" alt="" />
-													</div>
-													<div class="user-name">
-														<h4>Mededi Hassan MH</h4>
-														<h6>satisfi edclient</h6>
-													</div>
-													<div class="testi-quote2">
-														<img src="assets/images/resource/quote2.png" alt="icon" />
-													</div>
-												</div>
-
-												<div class="testi-desc">
-													<p>
-														Commerce end interfaces with collaborative growth strategies
-														wireless recaptiualize one-to-one potentialities through
-														client-focused mediic of web-readiness. Appropriately enhance
-														seamless alignments after team solutions forward growth for
-														corporate web-readiness.
+														Iyienu Mission Hospital is getting better and better. Lot of
+														improvement overall compared to the last time I was here. The
+														facilities and care are excellent.
 													</p>
 												</div>
 											</div>
@@ -531,7 +651,7 @@
 					</div>
 				</div>
 				<!--==================================================-->
-				<!-- End mediic Testimonial Section -->
+				<!-- End Customer Experiences Section -->
 				<!--==================================================-->
 
 				<!--==================================================-->
@@ -548,7 +668,7 @@
 									</div>
 									<div class="subscribe-title">
 										<h1 class="cursor-scale small">
-											Since 2007 We’re working Medical group more than 1200+ Patient
+											Since 1998 We're working Medical group more than 1200+ Patient
 										</h1>
 									</div>
 								</div>
