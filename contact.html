@@ -41,6 +41,54 @@
 		<link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet" />
 
 		<link rel="stylesheet" href="assets/css/aos.css" />
+
+		<!-- Custom Contact Page Styles -->
+		<style>
+			/* Contact Service Cards - Same Height */
+			.contact-service-section .row {
+				display: flex !important;
+				flex-wrap: wrap !important;
+			}
+
+			.contact-service-section .col-lg-4 {
+				display: flex !important;
+				margin-bottom: 30px !important;
+			}
+
+			.contact-service-box {
+				width: 100% !important;
+				height: 100% !important;
+				display: flex !important;
+				flex-direction: column !important;
+			}
+
+			.contact-service-content {
+				flex: 1 !important;
+				display: flex !important;
+				flex-direction: column !important;
+			}
+
+			.contact-address {
+				flex: 1 !important;
+				display: flex !important;
+				flex-direction: column !important;
+			}
+
+			.contact-address span {
+				margin-bottom: 5px !important;
+			}
+
+			.contact-address span:last-child {
+				margin-bottom: 0 !important;
+			}
+
+			@media (max-width: 768px) {
+				.contact-service-section .col-lg-4 {
+					margin-bottom: 20px !important;
+				}
+			}
+		</style>
+		<!-- End Custom Contact Page Styles -->
 	</head>
 	<body>
 		<!-- loder -->
@@ -57,7 +105,7 @@
 		<!--==================================================-->
 		<!-- Start mediic Main Menu  -->
 		<!--==================================================-->
-		<div id="sticky-header" class="mediic_nav_manu style-2">
+		<div id="sticky-header" class="mediic_nav_manu">
 			<div class="container-fluid">
 				<div class="row align-items-center">
 					<div class="col-lg-2">
@@ -74,19 +122,19 @@
 						<nav class="mediic_menu">
 							<ul class="nav_scroll">
 								<li>
-									<a class="mdy-hover cursor-scale small" href="#">Home </a>
-									<ul class="sub-menu">
+									<a class="mdy-hover cursor-scale small" href="index.html">Home </a>
+									<!-- <ul class="sub-menu">
 										<li><a href="index.html">Home Version 01</a></li>
 										<li><a href="index-2.html">Home Version 02</a></li>
 										<li>
 											<a href="https://html.tf.dreamitsolution.net/mediic/">Home Version 03</a>
 										</li>
-									</ul>
+									</ul> -->
 								</li>
 								<li>
 									<a class="mdy-hover cursor-scale small" href="about.html">About</a>
 								</li>
-								<li>
+								<!-- <li>
 									<a class="mdy-hover cursor-scale small" href="#">Pages </a>
 									<ul class="sub-menu">
 										<li><a href="about.html">About Us</a></li>
@@ -101,15 +149,15 @@
 										<li><a href="faq.html">Faqs</a></li>
 										<li><a href="contact.html">Contact Us</a></li>
 									</ul>
-								</li>
+								</li> -->
 								<li>
-									<a class="mdy-hover cursor-scale small" href="#">Services </a>
+									<a class="mdy-hover cursor-scale small" href="service.html">Services </a>
 									<ul class="sub-menu">
 										<li><a href="service.html">Our Service</a></li>
 										<li><a href="service-details.html">Service Details</a></li>
 									</ul>
 								</li>
-								<li>
+								<!-- <li>
 									<a class="mdy-hover cursor-scale small" href="#">Blog </a>
 									<ul class="sub-menu">
 										<li><a href="blog-grid.html">Blog Gird</a></li>
@@ -118,7 +166,7 @@
 										<li><a href="blog-left-sidebar.html">Left Sidebar</a></li>
 										<li><a href="blog-details.html">Blog Details</a></li>
 									</ul>
-								</li>
+								</li> -->
 								<li>
 									<a class="mdy-hover cursor-scale small" href="contact.html">Contact Us</a>
 								</li>
@@ -129,16 +177,16 @@
 									<i class="fa-solid fa-magnifying-glass"></i>
 								</div>
 								<!-- header button -->
-								<div class="header-button">
+								<!-- <div class="header-button">
 									<a href="appointment.html">
-										Get Appoinment
+										Book Appointment Online 24/7
 										<img src="assets/images/resource/arrow.png" alt="" />
 										<div class="mediic-hover-btn hover-btn"></div>
 										<div class="mediic-hover-btn hover-btn2"></div>
 										<div class="mediic-hover-btn hover-btn3"></div>
 										<div class="mediic-hover-btn hover-btn4"></div>
 									</a>
-								</div>
+								</div> -->
 								<div class="sidebar">
 									<div class="nav-btn navSidebar-button">
 										<span><i class="bi bi-grid-3x3-gap-fill"></i></span>
@@ -157,15 +205,15 @@
 				<nav class="mediic_menu">
 					<ul class="nav_scroll">
 						<li>
-							<a class="mdy-hover" href="#">Home </a>
-							<ul class="sub-menu">
+							<a class="mdy-hover" href="index.html">Home </a>
+							<!-- <ul class="sub-menu">
 								<li><a href="index.html">Home Version 01</a></li>
 								<li><a href="index-2.html">Home Version 02</a></li>
 								<li><a href="https://html.tf.dreamitsolution.net/mediic/">Home Version 03</a></li>
-							</ul>
+							</ul> -->
 						</li>
 						<li><a class="mdy-hover" href="about.html">About</a></li>
-						<li>
+						<!-- <li>
 							<a class="mdy-hover" href="#">Pages </a>
 							<ul class="sub-menu">
 								<li><a href="about.html">About Us</a></li>
@@ -180,15 +228,15 @@
 								<li><a href="faq.html">Faqs</a></li>
 								<li><a href="contact.html">Contact Us</a></li>
 							</ul>
-						</li>
+						</li> -->
 						<li>
-							<a class="mdy-hover" href="#">Services </a>
+							<a class="mdy-hover" href="service.html">Services </a>
 							<ul class="sub-menu">
 								<li><a href="service.html">Our Service</a></li>
 								<li><a href="service-details.html">Service Details</a></li>
 							</ul>
 						</li>
-						<li>
+						<!-- <li>
 							<a class="mdy-hover" href="#">Blog </a>
 							<ul class="sub-menu">
 								<li><a href="blog-grid.html">Blog Gird</a></li>
@@ -197,7 +245,7 @@
 								<li><a href="blog-left-sidebar.html">Left Sidebar</a></li>
 								<li><a href="blog-details.html">Blog Details</a></li>
 							</ul>
-						</li>
+						</li> -->
 						<li><a class="mdy-hover" href="contact.html">Contact Us</a></li>
 					</ul>
 				</nav>
@@ -221,7 +269,9 @@
 									<h1 class="cursor-scale">Contact Us</h1>
 									<ul class="breatcome-item">
 										<li>
-											<a class="cursor-scale small" href="index.html"> mediic </a>
+											<a class="cursor-scale small" href="index.html">
+												Iyienu Mission Hospital
+											</a>
 										</li>
 										<li>Contact Us</li>
 									</ul>
@@ -336,15 +386,16 @@
 									<div class="contact-service-content">
 										<div class="contact-head">
 											<div class="contact-title">
-												<h5>MEET US</h5>
+												<h5>VISIT US</h5>
 											</div>
 											<div class="contact-icon">
-												<img src="assets/images/resource/icon-message.png" alt="" />
+												<img src="assets/images/resource/icon-location.png" alt="" />
 											</div>
 										</div>
 										<div class="contact-address">
-											<h2>Email Address</h2>
-											<span>no-reply@pbmadmin.com</span>
+											<h2>Hospital Address</h2>
+											<span>K/m 8 old Onitsha Enugu Road, Ogiri Anambra State Nigeria</span>
+											<span>P.O Box 67; P.M.B 4</span>
 										</div>
 									</div>
 								</div>
@@ -361,8 +412,10 @@
 											</div>
 										</div>
 										<div class="contact-address">
-											<h2>Phone Number</h2>
-											<span>Phone : (+55) 654 - 545 - 5418</span>
+											<h2>Phone Numbers</h2>
+											<span>08065984191</span>
+											<span>08068516722</span>
+											<span>0813 363 5001</span>
 										</div>
 									</div>
 								</div>
@@ -372,15 +425,16 @@
 									<div class="contact-service-content">
 										<div class="contact-head">
 											<div class="contact-title">
-												<h5>SEND NOW</h5>
+												<h5>REGISTERED NAME</h5>
 											</div>
 											<div class="contact-icon">
-												<img src="assets/images/resource/icon-location.png" alt="" />
+												<img src="assets/images/resource/icon-message.png" alt="" />
 											</div>
 										</div>
 										<div class="contact-address">
-											<h2>Our Locations</h2>
-											<span>A-1, Envanto Headquarter, Australia</span>
+											<h2>Hospital Identity</h2>
+											<span>Iyienu Mission Hospital - HealthCare Foundation</span>
+											<span>University on the Niger Teaching Hospital</span>
 										</div>
 									</div>
 								</div>
@@ -424,7 +478,7 @@
 									</div>
 									<div class="subscribe-title">
 										<h1 class="cursor-scale small">
-											Since 2007 We’re working Medical group more than 1200+ Patient
+											Since 1907 We're working Medical group more than 1200+ Patient
 										</h1>
 									</div>
 								</div>
@@ -464,8 +518,9 @@
 									</div>
 									<div class="company-info-desc">
 										<p>
-											Completely promote interdependent systems for Latest update news this
-											Medical.
+											One of Nigeria's leading healthcare institutions with an outstanding
+											reputation for delivering excellent clinical services. Providing quality
+											patient-centered, responsive, and technology-driven care.
 										</p>
 									</div>
 									<form>
@@ -524,15 +579,15 @@
 									<h4 class="widget-title">Contacts</h4>
 									<div class="footer-mediic-contact">
 										<div class="place-location">
-											<p>102/ B Street, New Elephant Road, Sandigo, USA</p>
+											<p>K/m 8 old Onitsha Enugu Road, Ogiri Anambra State Nigeria</p>
 										</div>
 										<div class="mediic-info">
-											<h5>Email-US</h5>
-											<p>example@gmail.com</p>
+											<h5>Emergency Contact</h5>
+											<p>+234 806 991 2996</p>
 										</div>
 										<div class="mediic-info">
-											<h5>Call Now</h5>
-											<p>+123 (4567) - 890</p>
+											<h5>Phone Numbers</h5>
+											<p>08065984191, 08068516722, 0813 363 5001</p>
 										</div>
 									</div>
 								</div>
@@ -648,19 +703,20 @@
 											<h2>Contact Info</h2>
 											<ul class="list-style-one">
 												<li>
-													<span><i class="bi bi-envelope"></i></span>Chicago 12, Melborne
-													City, USA
+													<span><i class="bi bi-geo-alt"></i></span>K/m 8 old Onitsha Enugu
+													Road, Ogiri Anambra State Nigeria
 												</li>
 												<li>
-													<span><i class="bi bi-telephone-forward"></i></span>(+001)
-													123-456-7890
+													<span><i class="bi bi-telephone-forward"></i></span>+234 806 991
+													2996
 												</li>
 												<li>
-													<span><i class="bi bi-geo-alt"></i></span>Example.com
+													<span><i class="bi bi-envelope"></i></span
+													>info@iyienumissionhospital.com
 												</li>
 												<li>
-													<span><i class="bi bi-clock"></i></span>Week Days: 09.00 to 18.00
-													Sunday: Closed
+													<span><i class="bi bi-clock"></i></span>24/7 Emergency Services
+													Available
 												</li>
 											</ul>
 										</div>

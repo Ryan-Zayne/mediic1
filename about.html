@@ -79,13 +79,91 @@
 				margin-bottom: 0;
 			}
 
+			.history-content {
+				background: #ffffff;
+				padding: 30px;
+				border-radius: 10px;
+				box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+				margin-bottom: 30px;
+				height: 100%;
+			}
+
+			.history-content h3 {
+				color: #333;
+				font-weight: 600;
+				margin-bottom: 20px;
+				font-size: 1.3rem;
+			}
+
+			.history-content p {
+				color: #666;
+				line-height: 1.6;
+				margin-bottom: 20px;
+			}
+
+			.history-list {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			.history-list li {
+				color: #666;
+				line-height: 1.6;
+				margin-bottom: 10px;
+				padding-left: 20px;
+				position: relative;
+			}
+
+			.history-list li:before {
+				content: "•";
+				color: #007bff;
+				font-weight: bold;
+				position: absolute;
+				left: 0;
+			}
+
+			/* Mission Vision Values Cards - Same Height */
+			.mission-vission-section .row.align-items-center {
+				align-items: stretch !important;
+			}
+
+			.mission-vission-section .col-lg-4 {
+				display: flex;
+			}
+
+			.mission-vission-single-box {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.mission-vission-content {
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.m_v-ssion-desc {
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.m_v-ssion-desc p {
+				flex: 1;
+				margin-bottom: 0;
+			}
+
 			@media (max-width: 768px) {
-				.achievement-item {
+				.achievement-item,
+				.history-content {
 					padding: 20px;
 					margin-bottom: 20px;
 				}
 
-				.achievement-item h4 {
+				.achievement-item h4,
+				.history-content h3 {
 					font-size: 1.1rem;
 				}
 			}
@@ -107,16 +185,16 @@
 		<!--==================================================-->
 		<!-- Start mediic Main Menu  -->
 		<!--==================================================-->
-		<div id="sticky-header" class="mediic_nav_manu style-2">
+		<div id="sticky-header" class="mediic_nav_manu">
 			<div class="container-fluid">
 				<div class="row align-items-center">
 					<div class="col-lg-2">
 						<div class="logo cursor-scale small">
-							<a class="logo_img" href="index.html" title="Iyienu Mission Hospital">
-								<img src="assets/images/logo.png" alt="Iyienu Mission Hospital" />
+							<a class="logo_img" href="index.html" title="mediic">
+								<img src="assets/images/logo.png" alt="logo" />
 							</a>
-							<a class="main_sticky" href="index.html" title="Iyienu Mission Hospital">
-								<img src="assets/images/logo2.png" alt="Iyienu Mission Hospital" />
+							<a class="main_sticky" href="index.html" title="mediic">
+								<img src="assets/images/logo2.png" alt="logo" />
 							</a>
 						</div>
 					</div>
@@ -124,19 +202,19 @@
 						<nav class="mediic_menu">
 							<ul class="nav_scroll">
 								<li>
-									<a class="mdy-hover cursor-scale small" href="#">Home </a>
-									<ul class="sub-menu">
+									<a class="mdy-hover cursor-scale small" href="index.html">Home </a>
+									<!-- <ul class="sub-menu">
 										<li><a href="index.html">Home Version 01</a></li>
 										<li><a href="index-2.html">Home Version 02</a></li>
 										<li>
 											<a href="https://html.tf.dreamitsolution.net/mediic/">Home Version 03</a>
 										</li>
-									</ul>
+									</ul> -->
 								</li>
 								<li>
 									<a class="mdy-hover cursor-scale small" href="about.html">About</a>
 								</li>
-								<li>
+								<!-- <li>
 									<a class="mdy-hover cursor-scale small" href="#">Pages </a>
 									<ul class="sub-menu">
 										<li><a href="about.html">About Us</a></li>
@@ -151,15 +229,15 @@
 										<li><a href="faq.html">Faqs</a></li>
 										<li><a href="contact.html">Contact Us</a></li>
 									</ul>
-								</li>
+								</li> -->
 								<li>
-									<a class="mdy-hover cursor-scale small" href="#">Services </a>
+									<a class="mdy-hover cursor-scale small" href="service.html">Services </a>
 									<ul class="sub-menu">
 										<li><a href="service.html">Our Service</a></li>
 										<li><a href="service-details.html">Service Details</a></li>
 									</ul>
 								</li>
-								<li>
+								<!-- <li>
 									<a class="mdy-hover cursor-scale small" href="#">Blog </a>
 									<ul class="sub-menu">
 										<li><a href="blog-grid.html">Blog Gird</a></li>
@@ -168,7 +246,7 @@
 										<li><a href="blog-left-sidebar.html">Left Sidebar</a></li>
 										<li><a href="blog-details.html">Blog Details</a></li>
 									</ul>
-								</li>
+								</li> -->
 								<li>
 									<a class="mdy-hover cursor-scale small" href="contact.html">Contact Us</a>
 								</li>
@@ -179,16 +257,16 @@
 									<i class="fa-solid fa-magnifying-glass"></i>
 								</div>
 								<!-- header button -->
-								<div class="header-button">
+								<!-- <div class="header-button">
 									<a href="appointment.html">
-										Get Appoinment
+										Book Appointment Online 24/7
 										<img src="assets/images/resource/arrow.png" alt="" />
 										<div class="mediic-hover-btn hover-btn"></div>
 										<div class="mediic-hover-btn hover-btn2"></div>
 										<div class="mediic-hover-btn hover-btn3"></div>
 										<div class="mediic-hover-btn hover-btn4"></div>
 									</a>
-								</div>
+								</div> -->
 								<div class="sidebar">
 									<div class="nav-btn navSidebar-button">
 										<span><i class="bi bi-grid-3x3-gap-fill"></i></span>
@@ -207,15 +285,15 @@
 				<nav class="mediic_menu">
 					<ul class="nav_scroll">
 						<li>
-							<a class="mdy-hover" href="#">Home </a>
-							<ul class="sub-menu">
+							<a class="mdy-hover" href="index.html">Home </a>
+							<!-- <ul class="sub-menu">
 								<li><a href="index.html">Home Version 01</a></li>
 								<li><a href="index-2.html">Home Version 02</a></li>
 								<li><a href="https://html.tf.dreamitsolution.net/mediic/">Home Version 03</a></li>
-							</ul>
+							</ul> -->
 						</li>
 						<li><a class="mdy-hover" href="about.html">About</a></li>
-						<li>
+						<!-- <li>
 							<a class="mdy-hover" href="#">Pages </a>
 							<ul class="sub-menu">
 								<li><a href="about.html">About Us</a></li>
@@ -230,15 +308,15 @@
 								<li><a href="faq.html">Faqs</a></li>
 								<li><a href="contact.html">Contact Us</a></li>
 							</ul>
-						</li>
+						</li> -->
 						<li>
-							<a class="mdy-hover" href="#">Services </a>
+							<a class="mdy-hover" href="service.html">Services </a>
 							<ul class="sub-menu">
 								<li><a href="service.html">Our Service</a></li>
 								<li><a href="service-details.html">Service Details</a></li>
 							</ul>
 						</li>
-						<li>
+						<!-- <li>
 							<a class="mdy-hover" href="#">Blog </a>
 							<ul class="sub-menu">
 								<li><a href="blog-grid.html">Blog Gird</a></li>
@@ -247,7 +325,7 @@
 								<li><a href="blog-left-sidebar.html">Left Sidebar</a></li>
 								<li><a href="blog-details.html">Blog Details</a></li>
 							</ul>
-						</li>
+						</li> -->
 						<li><a class="mdy-hover" href="contact.html">Contact Us</a></li>
 					</ul>
 				</nav>
@@ -293,10 +371,10 @@
 						<div class="row">
 							<div class="col-lg-6">
 								<div class="about-thumb">
-									<img src="assets/images/resource/about3.jpg" alt="Iyienu Mission Hospital" />
+									<img src="assets/images/resource/about3.jpg" alt="Iyi-Enu Mission Hospital" />
 									<div class="counter-right-side">
 										<div class="counter-single-box bx-1 cursor-scale" data-aos="fade-up">
-											<div class="odometer-wrapper counter-box-title" data-count="25">
+											<div class="odometer-wrapper counter-box-title" data-count="115">
 												<h1 class="odometer"></h1>
 												<h1>+</h1>
 											</div>
@@ -319,26 +397,20 @@
 							<div class="col-lg-6" data-aos="fade-up-left">
 								<div class="mediic-section-title">
 									<h4>WHO WE ARE</h4>
-									<h1 class="cursor-scale">About Iyienu Mission Hospital</h1>
+									<h1 class="cursor-scale">About Iyi-Enu Mission Hospital</h1>
 									<p>
-										Iyienu Mission Hospital is one of Nigeria's leading healthcare institutions
-										with an outstanding reputation for delivering excellent clinical services.
-										Since our inception under the current management (1998), we have remained at
-										the forefront of providing and delivering quality patient-centered,
-										responsive, and technology-driven care across various locations in Nigeria
-										to both citizens and foreign nationals.
+										University On The Niger Iyi-Enu Teaching Hospital Anambra State, established
+										in 1907 by the Church Missionary Society, is one of Nigeria's oldest and
+										most trusted mission hospitals. Located in Ogidi, Anambra State, we are
+										committed to delivering compassionate, holistic, and high-quality healthcare
+										while training the next generation of medical professionals.
 									</p>
 									<p>
-										Our integrated health services are wide-ranging, from cardiology and
-										ophthalmology to radio-diagnostics and laboratory services. Our team of
-										highly qualified medical professionals is equipped to provide a
-										comprehensive range of treatments, including minimal access procedures,
-										neonatology, ICU care, and other general medical and surgical services.
-									</p>
-									<p>
-										We are proud to be an accredited center for specialist training in various
-										medical fields, offering internships to medical doctors, radiographers,
-										optometrists, and pharmacists.
+										The name "Iyi-Enu," meaning "Mouth of the Spring," reflects the life-giving
+										mission of the hospital—a place of healing and hope for all. Founded on the
+										Christian principle to "Preach and Heal," Iyi-Enu was designed not only to
+										provide medical care but also to address the spiritual and emotional needs
+										of its patients.
 									</p>
 								</div>
 								<div class="mediic-btn cursor-scale small">
@@ -355,6 +427,91 @@
 				</div>
 				<!--==================================================-->
 				<!-- End Who We Are Section  -->
+				<!--==================================================-->
+
+				<!--==================================================-->
+				<!-- Start Our History Section -->
+				<!--==================================================-->
+
+				<div class="about-section style-3 align-items-center">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12" data-aos="fade-up">
+								<div class="mediic-section-title text-center">
+									<h4>OUR HISTORY</h4>
+									<h1 class="cursor-scale">A Legacy of Faith and Healing Since 1907</h1>
+									<p>
+										Established in 1907 by the Church Missionary Society (CMS), Iyi-Enu Mission
+										Hospital is one of Nigeria's oldest and most reputable mission hospitals.
+										From its humble beginnings as a dispensary in Ozalla, Onitsha, it was later
+										relocated to Iyi-Enu, Ogidi, along the Onitsha–Enugu Expressway.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6" data-aos="fade-up">
+								<div class="history-content">
+									<h3>Pioneering Excellence in Healthcare and Education</h3>
+									<p>
+										Iyi-Enu Mission Hospital holds a unique place in the history of healthcare
+										in Nigeria. It was the first hospital in southeastern Nigeria, and over the
+										decades, it has achieved several pioneering milestones:
+									</p>
+									<ul class="history-list">
+										<li>
+											First in Nigeria to graduate trained midwives through its pioneering
+											School of Midwifery
+										</li>
+										<li>
+											One of the earliest hospitals in the country to train qualified nurses
+										</li>
+										<li>
+											Established village maternity homes and introduced mobile medical
+											services
+										</li>
+										<li>
+											Played a leading role in the early treatment and eradication of
+											infectious diseases
+										</li>
+										<li>
+											Among the first hospitals in Nigeria to implement traveling doctors and
+											mobile clinics
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-6" data-aos="fade-up">
+								<div class="history-content">
+									<h3>A Teaching and Referral Center</h3>
+									<p>
+										Today, Iyi-Enu has evolved into a full-fledged teaching and referral
+										hospital, affiliated with the University on the Niger. It now serves as the
+										University on the Niger Teaching Hospital, Iyi-Enu, and continues to be a
+										vital hub for clinical education, research, and healthcare delivery.
+									</p>
+									<p>The hospital proudly hosts:</p>
+									<ul class="history-list">
+										<li>
+											The School of Nursing Iyi-Enu, one of Nigeria's oldest and most respected
+											institutions
+										</li>
+										<li>
+											The School of Midwifery, renowned for producing highly competent midwives
+										</li>
+										<li>
+											The Lasbery College of Health Technology, offering diploma and
+											certificate programs
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--==================================================-->
+				<!-- End Our History Section -->
 				<!--==================================================-->
 
 				<!--==================================================-->
@@ -377,9 +534,12 @@
 										</div>
 										<div class="m_v-ssion-desc">
 											<p>
-												We promise outstanding care in a friendly environment, delivering
-												quality patient-centered, responsive, and technology-driven healthcare
-												services.
+												Man being God's greatest and most dearly loved creation deserves the
+												best that life can offer both physically and spiritually. Quality
+												Healthcare is the right of all. We are poised to offer quality,
+												affordable and accessible Healthcare to all irrespective of sex, race,
+												social status or religion. Our goal is that none should be denied good
+												Healthcare because of whom or what he/she is or is not.
 											</p>
 										</div>
 									</div>
@@ -402,9 +562,9 @@
 										</div>
 										<div class="m_v-ssion-desc">
 											<p>
-												To be the leading healthcare institution in Nigeria by delivering
-												exceptional clinical care, training, and research while maintaining
-												the highest standards of medical excellence.
+												To be a Healthcare institution that provides quality, affordable and
+												accessible Healthcare Services. To constantly be on top in the
+												training of Healthcare personnel for the Health System.
 											</p>
 										</div>
 									</div>
@@ -422,14 +582,14 @@
 												<img src="assets/images/resource/m-icon2.png" alt="icon" />
 											</div>
 											<div class="m_v-ssion-title">
-												<h3>Core Values</h3>
+												<h3>Our Values</h3>
 											</div>
 										</div>
 										<div class="m_v-ssion-desc">
 											<p>
-												Resourcefulness, Kindness, Integrity, and Team Spirit - these values
-												guide our commitment to providing compassionate, ethical, and
-												innovative healthcare solutions.
+												Faith-based care, integrity, medical excellence, compassion,
+												innovation, and commitment to affordable and accessible healthcare for
+												all communities.
 											</p>
 										</div>
 									</div>
@@ -456,14 +616,22 @@
 						<div class="row">
 							<div class="col-lg-12" data-aos="fade-up">
 								<div class="mediic-section-title text-center">
-									<h4>OUR QUALITY POLICY</h4>
-									<h1 class="cursor-scale">Commitment to Excellence</h1>
+									<h4>SUSTAINING THE VISION</h4>
+									<h1 class="cursor-scale">Faith-Based Healthcare Excellence</h1>
 									<p>
-										Iyienu Mission Hospital is committed to delivering consistently high quality
-										and patient-centered health care services that meet and exceed the
-										expectations of our customers in compliance with all applicable statutory
-										and regulatory requirements and ensuring the continual improvement of our
-										services in line with international healthcare standards.
+										Guided by its founding mission and values, Iyi-Enu remains steadfast in its
+										commitment to faith-based, affordable, and accessible healthcare delivery.
+										The hospital is owned and managed by the Diocese on the Niger, Anglican
+										Communion, and continues to serve as a symbol of integrity, medical
+										excellence, and Christian compassion.
+									</p>
+									<p>
+										Through outreach programs, free medical missions, health education
+										campaigns, and ongoing professional training, Iyi-Enu Mission Hospital
+										continues to positively impact lives across generations and geographies.
+										Iyi-Enu Mission Hospital is more than a hospital. It is a legacy—of faith,
+										of service, of innovation, and of life-saving impact that spans over 115
+										years and counting.
 									</p>
 								</div>
 							</div>
@@ -485,11 +653,11 @@
 							<div class="col-lg-12" data-aos="fade-up">
 								<div class="mediic-section-title text-center">
 									<h4>OUR ACHIEVEMENTS</h4>
-									<h1 class="cursor-scale">Recognition & Accreditations</h1>
+									<h1 class="cursor-scale">Pioneering Healthcare Milestones</h1>
 									<p>
-										We are proud of our achievements and recognition as one of Nigeria's leading
-										healthcare institutions, with multiple accreditations and awards for
-										excellence in healthcare delivery.
+										Over 115 years of continuous service, Iyi-Enu Mission Hospital has achieved
+										numerous pioneering milestones in healthcare delivery and medical education
+										in Nigeria.
 									</p>
 								</div>
 							</div>
@@ -497,41 +665,41 @@
 						<div class="row">
 							<div class="col-lg-6 col-md-6" data-aos="fade-up">
 								<div class="achievement-item">
-									<h4>ISO 9001:2015 Quality Management System</h4>
-									<p class="achievement-year">2015</p>
+									<h4>First Hospital in Southeastern Nigeria</h4>
+									<p class="achievement-year">1907</p>
 									<p>
-										Certified for maintaining the highest standards of quality management in
-										healthcare delivery.
+										Established as the first hospital in southeastern Nigeria by the Church
+										Missionary Society, setting the foundation for healthcare in the region.
 									</p>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6" data-aos="fade-up">
 								<div class="achievement-item">
-									<h4>Accredited Training Center</h4>
-									<p class="achievement-year">2018</p>
+									<h4>Pioneering School of Midwifery</h4>
+									<p class="achievement-year">Early 1900s</p>
 									<p>
-										Recognized for training medical professionals in various specialties
-										including Family Medicine and Radiology.
+										First in Nigeria to graduate trained midwives through its pioneering School
+										of Midwifery, revolutionizing maternal care.
 									</p>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6" data-aos="fade-up">
 								<div class="achievement-item">
-									<h4>Healthcare Excellence Award</h4>
-									<p class="achievement-year">2022</p>
+									<h4>Mobile Medical Services</h4>
+									<p class="achievement-year">Mid-1900s</p>
 									<p>
-										Recognized as one of the best private healthcare service providers in
-										Nigeria.
+										Among the first hospitals in Nigeria to implement traveling doctors and
+										mobile clinics, decades before mobile health became a global trend.
 									</p>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6" data-aos="fade-up">
 								<div class="achievement-item">
-									<h4>Information Security Management</h4>
-									<p class="achievement-year">2024</p>
+									<h4>University Teaching Hospital</h4>
+									<p class="achievement-year">Present</p>
 									<p>
-										ISO 27001 certified for maintaining the highest standards of information
-										security in healthcare.
+										Evolved into a full-fledged teaching and referral hospital, affiliated with
+										the University on the Niger, serving as a vital hub for clinical education.
 									</p>
 								</div>
 							</div>
@@ -668,7 +836,7 @@
 									</div>
 									<div class="subscribe-title">
 										<h1 class="cursor-scale small">
-											Since 1998 We're working Medical group more than 1200+ Patient
+											Since 1907 We're working Medical group more than 1200+ Patient
 										</h1>
 									</div>
 								</div>
@@ -708,8 +876,9 @@
 									</div>
 									<div class="company-info-desc">
 										<p>
-											Completely promote interdependent systems for Latest update news this
-											Medical.
+											One of Nigeria's leading healthcare institutions with an outstanding
+											reputation for delivering excellent clinical services. Providing quality
+											patient-centered, responsive, and technology-driven care.
 										</p>
 									</div>
 									<form>
@@ -768,15 +937,15 @@
 									<h4 class="widget-title">Contacts</h4>
 									<div class="footer-mediic-contact">
 										<div class="place-location">
-											<p>102/ B Street, New Elephant Road, Sandigo, USA</p>
+											<p>K/m 8 old Onitsha Enugu Road, Ogiri Anambra State Nigeria</p>
 										</div>
 										<div class="mediic-info">
-											<h5>Email-US</h5>
-											<p>example@gmail.com</p>
+											<h5>Emergency Contact</h5>
+											<p>+234 806 991 2996</p>
 										</div>
 										<div class="mediic-info">
-											<h5>Call Now</h5>
-											<p>+123 (4567) - 890</p>
+											<h5>Phone Numbers</h5>
+											<p>08065984191, 08068516722, 0813 363 5001</p>
 										</div>
 									</div>
 								</div>
@@ -892,19 +1061,20 @@
 											<h2>Contact Info</h2>
 											<ul class="list-style-one">
 												<li>
-													<span><i class="bi bi-envelope"></i></span>Chicago 12, Melborne
-													City, USA
+													<span><i class="bi bi-geo-alt"></i></span>K/m 8 old Onitsha Enugu
+													Road, Ogiri Anambra State Nigeria
 												</li>
 												<li>
-													<span><i class="bi bi-telephone-forward"></i></span>(+001)
-													123-456-7890
+													<span><i class="bi bi-telephone-forward"></i></span>+234 806 991
+													2996
 												</li>
 												<li>
-													<span><i class="bi bi-geo-alt"></i></span>Example.com
+													<span><i class="bi bi-envelope"></i></span
+													>info@iyienumissionhospital.com
 												</li>
 												<li>
-													<span><i class="bi bi-clock"></i></span>Week Days: 09.00 to 18.00
-													Sunday: Closed
+													<span><i class="bi bi-clock"></i></span>24/7 Emergency Services
+													Available
 												</li>
 											</ul>
 										</div>

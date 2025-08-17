@@ -37,6 +37,67 @@
 		<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
 		<link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet" />
 		<link rel="stylesheet" href="assets/css/aos.css" />
+		<!-- Custom Logo Styles -->
+		<style>
+			.text-logo {
+				font-family: "Cambria", serif;
+				text-decoration: none;
+				color: #333;
+				line-height: 1.2;
+				transition: all 0.3s ease;
+			}
+
+			.text-logo .logo-main {
+				font-size: 1.8rem;
+				font-weight: 700;
+				color: #007bff;
+				margin-bottom: 2px;
+				text-transform: uppercase;
+				letter-spacing: 0.5px;
+			}
+
+			.text-logo .logo-subtitle {
+				font-size: 0.75rem;
+				font-weight: 400;
+				color: #666;
+				line-height: 1.1;
+			}
+
+			.text-logo.sticky .logo-main {
+				font-size: 1.4rem;
+			}
+
+			.text-logo.sticky .logo-subtitle {
+				font-size: 0.65rem;
+			}
+
+			.text-logo:hover {
+				text-decoration: none;
+				color: #333;
+			}
+
+			.text-logo:hover .logo-main {
+				color: #0056b3;
+			}
+
+			@media (max-width: 768px) {
+				.text-logo .logo-main {
+					font-size: 1.4rem;
+				}
+
+				.text-logo .logo-subtitle {
+					font-size: 0.65rem;
+				}
+
+				.text-logo.sticky .logo-main {
+					font-size: 1.2rem;
+				}
+
+				.text-logo.sticky .logo-subtitle {
+					font-size: 0.6rem;
+				}
+			}
+		</style>
 		<!-- Custom Hero Styles -->
 		<style>
 			.hero-text-content {
@@ -133,6 +194,61 @@
 					font-size: 1rem;
 				}
 			}
+
+			/* About Snippet Section Styles */
+			.about-snippet-section {
+				padding: 80px 0;
+				background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+			}
+
+			.about-snippet-section .section-title h6 {
+				color: #007bff;
+				font-size: 16px;
+				font-weight: 600;
+				margin-bottom: 15px;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+
+			.about-snippet-section .section-title h2 {
+				color: #333;
+				font-size: 2.5rem;
+				font-weight: 700;
+				margin-bottom: 25px;
+				line-height: 1.2;
+			}
+
+			.about-snippet-section p {
+				color: #666;
+				font-size: 16px;
+				line-height: 1.8;
+				margin-bottom: 20px;
+			}
+
+			.about-snippet-section .about-snippet-btn {
+				margin-top: 30px;
+			}
+
+			.about-snippet-section .about-snippet-image img {
+				width: 100%;
+				height: auto;
+				border-radius: 15px;
+				box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+			}
+
+			@media (max-width: 768px) {
+				.about-snippet-section {
+					padding: 60px 0;
+				}
+
+				.about-snippet-section .section-title h2 {
+					font-size: 2rem;
+				}
+
+				.about-snippet-section .about-snippet-image {
+					margin-top: 30px;
+				}
+			}
 		</style>
 		<!-- End Custom Hero Styles -->
 	</head>
@@ -168,19 +284,19 @@
 						<nav class="mediic_menu">
 							<ul class="nav_scroll">
 								<li>
-									<a class="mdy-hover cursor-scale small" href="#">Home </a>
-									<ul class="sub-menu">
+									<a class="mdy-hover cursor-scale small" href="index.html">Home </a>
+									<!-- <ul class="sub-menu">
 										<li><a href="index.html">Home Version 01</a></li>
 										<li><a href="index-2.html">Home Version 02</a></li>
 										<li>
 											<a href="https://html.tf.dreamitsolution.net/mediic/">Home Version 03</a>
 										</li>
-									</ul>
+									</ul> -->
 								</li>
 								<li>
 									<a class="mdy-hover cursor-scale small" href="about.html">About</a>
 								</li>
-								<li>
+								<!-- <li>
 									<a class="mdy-hover cursor-scale small" href="#">Pages </a>
 									<ul class="sub-menu">
 										<li><a href="about.html">About Us</a></li>
@@ -195,15 +311,17 @@
 										<li><a href="faq.html">Faqs</a></li>
 										<li><a href="contact.html">Contact Us</a></li>
 									</ul>
-								</li>
+								</li> -->
+
 								<li>
-									<a class="mdy-hover cursor-scale small" href="#">Services </a>
+									<a class="mdy-hover cursor-scale small" href="service.html">Services </a>
 									<ul class="sub-menu">
 										<li><a href="service.html">Our Service</a></li>
 										<li><a href="service-details.html">Service Details</a></li>
 									</ul>
 								</li>
-								<li>
+
+								<!-- <li>
 									<a class="mdy-hover cursor-scale small" href="#">Blog </a>
 									<ul class="sub-menu">
 										<li><a href="blog-grid.html">Blog Gird</a></li>
@@ -212,7 +330,7 @@
 										<li><a href="blog-left-sidebar.html">Left Sidebar</a></li>
 										<li><a href="blog-details.html">Blog Details</a></li>
 									</ul>
-								</li>
+								</li> -->
 								<li>
 									<a class="mdy-hover cursor-scale small" href="contact.html">Contact Us</a>
 								</li>
@@ -223,16 +341,16 @@
 									<i class="fa-solid fa-magnifying-glass"></i>
 								</div>
 								<!-- header button -->
-								<div class="header-button">
+								<!-- <div class="header-button">
 									<a href="appointment.html">
-										Get Appoinment
+										Book Appointment Online 24/7
 										<img src="assets/images/resource/arrow.png" alt="" />
 										<div class="mediic-hover-btn hover-btn"></div>
 										<div class="mediic-hover-btn hover-btn2"></div>
 										<div class="mediic-hover-btn hover-btn3"></div>
 										<div class="mediic-hover-btn hover-btn4"></div>
 									</a>
-								</div>
+								</div> -->
 								<div class="sidebar">
 									<div class="nav-btn navSidebar-button">
 										<span><i class="bi bi-grid-3x3-gap-fill"></i></span>
@@ -251,15 +369,15 @@
 				<nav class="mediic_menu">
 					<ul class="nav_scroll">
 						<li>
-							<a class="mdy-hover" href="#">Home </a>
-							<ul class="sub-menu">
+							<a class="mdy-hover" href="index.html">Home </a>
+							<!-- <ul class="sub-menu">
 								<li><a href="index.html">Home Version 01</a></li>
 								<li><a href="index-2.html">Home Version 02</a></li>
 								<li><a href="https://html.tf.dreamitsolution.net/mediic/">Home Version 03</a></li>
-							</ul>
+							</ul> -->
 						</li>
 						<li><a class="mdy-hover" href="about.html">About</a></li>
-						<li>
+						<!-- <li>
 							<a class="mdy-hover" href="#">Pages </a>
 							<ul class="sub-menu">
 								<li><a href="about.html">About Us</a></li>
@@ -274,15 +392,15 @@
 								<li><a href="faq.html">Faqs</a></li>
 								<li><a href="contact.html">Contact Us</a></li>
 							</ul>
-						</li>
+						</li> -->
 						<li>
-							<a class="mdy-hover" href="#">Services </a>
+							<a class="mdy-hover" href="service.html">Services </a>
 							<ul class="sub-menu">
 								<li><a href="service.html">Our Service</a></li>
 								<li><a href="service-details.html">Service Details</a></li>
 							</ul>
 						</li>
-						<li>
+						<!-- <li>
 							<a class="mdy-hover" href="#">Blog </a>
 							<ul class="sub-menu">
 								<li><a href="blog-grid.html">Blog Gird</a></li>
@@ -291,7 +409,7 @@
 								<li><a href="blog-left-sidebar.html">Left Sidebar</a></li>
 								<li><a href="blog-details.html">Blog Details</a></li>
 							</ul>
-						</li>
+						</li> -->
 						<li><a class="mdy-hover" href="contact.html">Contact Us</a></li>
 					</ul>
 				</nav>
@@ -346,8 +464,8 @@
 												</div>
 											</div>
 											<div class="mediic-btn cursor-scale small">
-												<a href="appointment.html">
-													Book Appointment Online 24/7
+												<a href="service.html">
+													Learn more about our services
 													<i class="bi bi-arrow-return-right"></i
 												></a>
 											</div>
@@ -366,7 +484,7 @@
 
 									<div class="hero-all-shape cursor-scale small">
 										<div class="hero-shape">
-											<img src="assets/images/slider/hero-img.png" alt="" />
+											<!-- <img src="assets/images/slider/hero-img.png" alt="" /> -->
 										</div>
 										<div class="hero-shape2">
 											<img src="assets/images/slider/plus.png" alt="" />
@@ -388,6 +506,48 @@
 				<!--==================================================-->
 
 				<!--==================================================-->
+				<!-- Start About Us Snippet Section -->
+				<!--==================================================-->
+				<div class="about-snippet-section">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-6">
+								<div class="about-snippet-content" data-aos="fade-right">
+									<div class="section-title">
+										<h6>About Iyienu Mission Hospital</h6>
+										<h2>One of Nigeria's Leading Healthcare Institutions</h2>
+									</div>
+									<p>
+										Since 1907, Iyienu Mission Hospital has been at the forefront of healthcare
+										delivery in Nigeria. We are committed to providing quality, affordable, and
+										accessible healthcare services to all, irrespective of sex, race, social
+										status, or religion.
+									</p>
+									<p>
+										Our mission is to ensure that no one is denied good healthcare because of
+										who or what they are. We constantly strive to be on top in training
+										healthcare personnel for the health system.
+									</p>
+									<div class="about-snippet-btn">
+										<a href="about.html" class="mediic-btn cursor-scale small">
+											Learn More About Us <i class="bi bi-arrow-return-right"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="about-snippet-image" data-aos="fade-left">
+									<img src="assets/images/resource/about2.png" alt="Iyienu Mission Hospital" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--==================================================-->
+				<!-- End About Us Snippet Section -->
+				<!--==================================================-->
+
+				<!--==================================================-->
 				<!-- Start Counter Section -->
 				<!--==================================================-->
 				<div class="counter-serction">
@@ -406,7 +566,7 @@
 									</div>
 									<div class="counter-right-side cursor-scale">
 										<div class="counter-single-box bx-1" data-aos="fade-up">
-											<div class="odometer-wrapper counter-box-title" data-count="25">
+											<div class="odometer-wrapper counter-box-title" data-count="100">
 												<h1 class="odometer"></h1>
 												<h1>+</h1>
 											</div>
@@ -479,7 +639,7 @@
 										<div class="mediic-icon">
 											<img src="assets/images/resource/call.png" alt="" />
 										</div>
-										<h4>+234 806 991 2996</h4>
+										<h4>+234 8065984191</h4>
 										<p>Call Us for Booking appointments online 24 hrs available</p>
 									</div>
 									<div class="mediic-hover-box hover-bx"></div>
@@ -613,9 +773,9 @@
 												</div>
 											</div>
 											<div class="service-content">
-												<h6>Cardiology</h6>
+												<h6>Internal Medicine</h6>
 												<h2 class="cursor-scale small">
-													<a href="service.html">Heart Care</a>
+													<a href="service.html">Comprehensive Medical Care</a>
 												</h2>
 											</div>
 										</div>
@@ -629,9 +789,9 @@
 												</div>
 											</div>
 											<div class="service-content">
-												<h6>Dental</h6>
+												<h6>Obstetrics & Gynecology</h6>
 												<h2 class="cursor-scale small">
-													<a href="service.html">Dental Care</a>
+													<a href="service.html">Women's Health Care</a>
 												</h2>
 											</div>
 										</div>
@@ -645,9 +805,9 @@
 												</div>
 											</div>
 											<div class="service-content">
-												<h6>Surgery</h6>
+												<h6>Pediatrics</h6>
 												<h2 class="cursor-scale small">
-													<a href="service.html">Advanced Surgery</a>
+													<a href="service.html">Child Health Care</a>
 												</h2>
 											</div>
 										</div>
@@ -661,9 +821,73 @@
 												</div>
 											</div>
 											<div class="service-content">
-												<h6>Emergency</h6>
+												<h6>Radiology & Imaging</h6>
 												<h2 class="cursor-scale small">
-													<a href="service.html">24/7 Emergency</a>
+													<a href="service.html">Diagnostic Services</a>
+												</h2>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="single-service-box" data-aos="zoom-out">
+											<div class="service-thumb">
+												<img src="assets/images/resource/srvce.png" alt="" />
+												<div class="service-icon cursor-scale small">
+													<a href="service.html"><i class="bi bi-arrow-return-right"></i></a>
+												</div>
+											</div>
+											<div class="service-content">
+												<h6>General Surgery</h6>
+												<h2 class="cursor-scale small">
+													<a href="service.html">Advanced Surgical Care</a>
+												</h2>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="single-service-box" data-aos="zoom-in">
+											<div class="service-thumb">
+												<img src="assets/images/resource/srvce2.png" alt="" />
+												<div class="service-icon cursor-scale small">
+													<a href="service.html"><i class="bi bi-arrow-return-right"></i></a>
+												</div>
+											</div>
+											<div class="service-content">
+												<h6>Cardiology</h6>
+												<h2 class="cursor-scale small">
+													<a href="service.html">Heart Care Services</a>
+												</h2>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="single-service-box" data-aos="zoom-out">
+											<div class="service-thumb">
+												<img src="assets/images/resource/srvce3.png" alt="" />
+												<div class="service-icon cursor-scale small">
+													<a href="service.html"><i class="bi bi-arrow-return-right"></i></a>
+												</div>
+											</div>
+											<div class="service-content">
+												<h6>Neurology</h6>
+												<h2 class="cursor-scale small">
+													<a href="service.html">Neurological Care</a>
+												</h2>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="single-service-box" data-aos="zoom-in">
+											<div class="service-thumb">
+												<img src="assets/images/resource/srvce4.png" alt="" />
+												<div class="service-icon cursor-scale small">
+													<a href="service.html"><i class="bi bi-arrow-return-right"></i></a>
+												</div>
+											</div>
+											<div class="service-content">
+												<h6>Emergency Care</h6>
+												<h2 class="cursor-scale small">
+													<a href="service.html">24/7 Emergency Services</a>
 												</h2>
 											</div>
 										</div>
@@ -685,7 +909,7 @@
 				<!--==================================================-->
 				<!-- Start Appointment Section -->
 				<!--==================================================-->
-				<div class="appoinment-section">
+				<!-- <div class="appoinment-section">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-12">
@@ -774,7 +998,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<!--==================================================-->
 				<!-- End Appointment Section -->
 				<!--==================================================-->
@@ -783,128 +1007,128 @@
 				<!-- Start Team Section -->
 				<!--==================================================-->
 				<!-- <div class="team-section">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="top-mediic-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="top-mediic-section">
 									<div class="mediic-section-title cursor-scale" data-aos="flip-left">
-										<h1>
-											MEET OUR BEST
-											<br />
-											DOCTORS
-										</h1>
-									</div>
+                    <h1>
+                      MEET OUR BEST
+                      <br />
+                      DOCTORS
+                    </h1>
+                  </div>
 									<div class="counter-single-box bx-2 cursor-scale" data-aos="fade-down">
 										<div class="odometer-wrapper counter-box-title" data-count="38">
-											<h1 class="odometer"></h1>
-											<h1>+</h1>
-											<p class="counter-desc">PROFESSIONAL DOCTORS</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="mediic-shape">
-								<img src="assets/images/resource/crcle-bg.png" alt="" />
-							</div>
-						</div>
-						<div class="row">
-							<div class="swiper style-2 team">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<div class="team-single-box" data-aos="fade-up">
-											<div class="team-thumb">
-												<img src="assets/images/resource/team.jpg" alt="" />
-												<div class="social-icon">
-													<ul>
-														<li>
-															<a href="team-details.html"
-																><i class="fab fa-facebook-f"></i
-															></a>
-														</li>
-														<li>
-															<a href="team-details.html"
-																><i class="fa-brands fa-linkedin-in"></i
-															></a>
-														</li>
-														<li>
-															<a href="team-details.html"
-																><i class="fa-brands fa-behance"></i
-															></a>
-														</li>
-													</ul>
-												</div>
-											</div>
-											<div class="team-content text-center">
+                      <h1 class="odometer"></h1>
+                      <h1>+</h1>
+                      <p class="counter-desc">PROFESSIONAL DOCTORS</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mediic-shape">
+                <img src="assets/images/resource/crcle-bg.png" alt="" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="swiper style-2 team">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="team-single-box" data-aos="fade-up">
+                      <div class="team-thumb">
+                        <img src="assets/images/resource/team.jpg" alt="" />
+                        <div class="social-icon">
+                          <ul>
+                            <li>
+                              <a href="team-details.html"
+                                ><i class="fab fa-facebook-f"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="team-details.html"
+                                ><i class="fa-brands fa-linkedin-in"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="team-details.html"
+                                ><i class="fa-brands fa-behance"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="team-content text-center">
 												<h5>Cardiologist</h5>
 												<h2>Dr. Sarah Johnson</h2>
-											</div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="team-single-box" data-aos="zoom-in">
-											<div class="team-thumb">
-												<img src="assets/images/resource/team2.jpg" alt="" />
-												<div class="social-icon">
-													<ul>
-														<li>
-															<a href="team-details.html"
-																><i class="fab fa-facebook-f"></i
-															></a>
-														</li>
-														<li>
-															<a href="team-details.html"
-																><i class="fa-brands fa-linkedin-in"></i
-															></a>
-														</li>
-														<li>
-															<a href="team-details.html"
-																><i class="fa-brands fa-behance"></i
-															></a>
-														</li>
-													</ul>
-												</div>
-											</div>
-											<div class="team-content text-center">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="team-single-box" data-aos="zoom-in">
+                      <div class="team-thumb">
+                        <img src="assets/images/resource/team2.jpg" alt="" />
+                        <div class="social-icon">
+                          <ul>
+                            <li>
+                              <a href="team-details.html"
+                                ><i class="fab fa-facebook-f"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="team-details.html"
+                                ><i class="fa-brands fa-linkedin-in"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="team-details.html"
+                                ><i class="fa-brands fa-behance"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="team-content text-center">
 												<h5>Neurologist</h5>
 												<h2>Dr. Michael Chen</h2>
-											</div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="team-single-box" data-aos="fade-up">
-											<div class="team-thumb">
-												<img src="assets/images/resource/team3.jpg" alt="" />
-												<div class="social-icon">
-													<ul>
-														<li>
-															<a href="team-details.html"
-																><i class="fab fa-facebook-f"></i
-															></a>
-														</li>
-														<li>
-															<a href="team-details.html"
-																><i class="fa-brands fa-linkedin-in"></i
-															></a>
-														</li>
-														<li>
-															<a href="team-details.html"
-																><i class="fa-brands fa-behance"></i
-															></a>
-														</li>
-													</ul>
-												</div>
-											</div>
-											<div class="team-content text-center">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="team-single-box" data-aos="fade-up">
+                      <div class="team-thumb">
+                        <img src="assets/images/resource/team3.jpg" alt="" />
+                        <div class="social-icon">
+                          <ul>
+                            <li>
+                              <a href="team-details.html"
+                                ><i class="fab fa-facebook-f"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="team-details.html"
+                                ><i class="fa-brands fa-linkedin-in"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="team-details.html"
+                                ><i class="fa-brands fa-behance"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="team-content text-center">
 												<h5>Pediatrician</h5>
 												<h2>Dr. Emily Rodriguez</h2>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-pagination"></div>
-							</div>
-						</div>
-					</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
 				</div> -->
 				<!--==================================================-->
 				<!-- End Team Section -->
@@ -914,77 +1138,77 @@
 				<!-- Start Testimonial Section -->
 				<!--==================================================-->
 				<!--
-				<div class="mediic-top-section style-2">
-					<div class="container">
-						<div class="row align-items-center">
-							<div class="col-lg-12">
+        <div class="mediic-top-section style-2">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-12">
 								<div class="mediic-section-title text-center white" data-aos="flip-right">
-									<h1 class="cursor-scale">TESTIMONIAL</h1>
-								</div>
-							</div>
-							<div class="mediic-shape">
-								<img src="assets/images/resource/circle2.png" alt="" />
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="testimonial-section">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-lg-8">
-								<div class="testi-thumb" data-aos="zoom-in-right">
-									<img src="assets/images/resource/testi.jpg" alt="" />
-									<div class="testi-content">
-										<h4>Get Free Consultation</h4>
-										<div class="mediic-btn cursor-scale small">
+                  <h1 class="cursor-scale">TESTIMONIAL</h1>
+                </div>
+              </div>
+              <div class="mediic-shape">
+                <img src="assets/images/resource/circle2.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-section">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="testi-thumb" data-aos="zoom-in-right">
+                  <img src="assets/images/resource/testi.jpg" alt="" />
+                  <div class="testi-content">
+                    <h4>Get Free Consultation</h4>
+                    <div class="mediic-btn cursor-scale small">
 											<a href="appointment.html"
 												>Appointment <i class="bi bi-arrow-return-right"></i
-											></a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4">
-								<div class="swiper mySwiper6" data-aos="zoom-in-left">
-									<div class="swiper-wrapper">
-										<div class="swiper-slide">
-											<div class="testi-single-box">
-												<div class="testi-content-2">
-													<div class="testi-quote">
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="swiper mySwiper6" data-aos="zoom-in-left">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="testi-single-box">
+                        <div class="testi-content-2">
+                          <div class="testi-quote">
 														<img src="assets/images/resource/quote.png" alt="" />
-													</div>
-													<ul class="testi-rating">
-														<li><i class="bi bi-star-fill"></i></li>
-														<li><i class="bi bi-star-fill"></i></li>
-														<li><i class="bi bi-star-fill"></i></li>
-														<li><i class="bi bi-star-fill"></i></li>
-														<li><i class="bi bi-star-fill"></i></li>
-													</ul>
-													<div class="testi-desc">
-														<p>
+                          </div>
+                          <ul class="testi-rating">
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                          </ul>
+                          <div class="testi-desc">
+                            <p>
 															Excellent medical care and professional staff. The doctors
 															are highly skilled and the facilities are modern. Highly
 															recommended for quality healthcare.
-														</p>
-													</div>
-													<div class="user-info">
-														<div class="people-pic">
+                            </p>
+                          </div>
+                          <div class="user-info">
+                            <div class="people-pic">
 															<img src="assets/images/resource/people.png" alt="" />
-														</div>
-														<div class="user-name">
-															<h4>John D. Alexon</h4>
+                            </div>
+                            <div class="user-name">
+                              <h4>John D. Alexon</h4>
 															<h6>Patient</h6>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                          </div>
+                          </div>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
 				-->
 				<!--==================================================-->
 				<!-- End Testimonial Section -->
@@ -1048,106 +1272,106 @@
 				<!-- Start Blog Section -->
 				<!--==================================================-->
 				<!-- <div class="blog-section">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="top-mediic-section">
-									<div class="mediic-section-title" data-aos="flip-right">
-										<h1 class="cursor-scale">
-											READ OUR
-											<br />
-											LATEST BLOG
-										</h1>
-									</div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="top-mediic-section">
+                  <div class="mediic-section-title" data-aos="flip-right">
+                    <h1 class="cursor-scale">
+                      READ OUR
+                      <br />
+                      LATEST BLOG
+                    </h1>
+                  </div>
 									<div class="mediic-btn cursor-scale small" data-aos="fade-down">
 										<a href="blog-grid.html"
-											>View All Blog <i class="bi bi-arrow-return-right"></i
-										></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-lg-4 col-md-6">
-								<div class="blog-single-box" data-aos="fade-up">
-									<div class="blog-thumb">
-										<img src="assets/images/resource/blog.jpg" alt="" />
-										<div class="mediic-hover-box hover-bx"></div>
-										<div class="mediic-hover-box hover-bx2"></div>
-										<div class="mediic-hover-box hover-bx3"></div>
-										<div class="mediic-hover-box hover-bx4"></div>
-									</div>
-									<div class="blog-content">
-										<div class="blogs-category">
-											<ul>
-												<li class="blg-date">APRIL 10, 2024</li>
-												<li class="blg-admin">ADMIN</li>
-											</ul>
-										</div>
-										<div class="blog-title">
-											<h2 class="cursor-scale small">
-												<a href="blog-details.html"
+                      >View All Blog <i class="bi bi-arrow-return-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="blog-single-box" data-aos="fade-up">
+                  <div class="blog-thumb">
+                    <img src="assets/images/resource/blog.jpg" alt="" />
+                    <div class="mediic-hover-box hover-bx"></div>
+                    <div class="mediic-hover-box hover-bx2"></div>
+                    <div class="mediic-hover-box hover-bx3"></div>
+                    <div class="mediic-hover-box hover-bx4"></div>
+                  </div>
+                  <div class="blog-content">
+                    <div class="blogs-category">
+                      <ul>
+                        <li class="blg-date">APRIL 10, 2024</li>
+                        <li class="blg-admin">ADMIN</li>
+                      </ul>
+                    </div>
+                    <div class="blog-title">
+                      <h2 class="cursor-scale small">
+                        <a href="blog-details.html"
 													>Top 10 Popular Equipments for Medical Industry</a
-												>
-											</h2>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-6">
-								<div class="blog-single-box" data-aos="fade-down">
-									<div class="blog-thumb">
-										<img src="assets/images/resource/blog2.jpg" alt="" />
-										<div class="mediic-hover-box hover-bx"></div>
-										<div class="mediic-hover-box hover-bx2"></div>
-										<div class="mediic-hover-box hover-bx3"></div>
-										<div class="mediic-hover-box hover-bx4"></div>
-									</div>
-									<div class="blog-content">
-										<div class="blogs-category">
-											<ul>
-												<li class="blg-date">APRIL 10, 2024</li>
-												<li class="blg-admin">AUTHOR</li>
-											</ul>
-										</div>
-										<div class="blog-title">
-											<h2 class="cursor-scale small">
-												<a href="blog-details.html"
-													>How to maintain Patient for Better Surgery</a
-												>
-											</h2>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-6">
-								<div class="blog-single-box" data-aos="fade-up">
-									<div class="blog-thumb">
-										<img src="assets/images/resource/blog3.jpg" alt="" />
-										<div class="mediic-hover-box hover-bx"></div>
-										<div class="mediic-hover-box hover-bx2"></div>
-										<div class="mediic-hover-box hover-bx3"></div>
-										<div class="mediic-hover-box hover-bx4"></div>
-									</div>
-									<div class="blog-content">
-										<div class="blogs-category">
-											<ul>
-												<li class="blg-date">APRIL 10, 2024</li>
-												<li class="blg-admin">ADMIN</li>
-											</ul>
-										</div>
-										<div class="blog-title">
-											<h2 class="cursor-scale small">
-												<a href="blog-details.html"
-													>Most Popular Advises for Kids Happy & Smile Life</a
-												>
-											</h2>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+                        >
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="blog-single-box" data-aos="fade-down">
+                  <div class="blog-thumb">
+                    <img src="assets/images/resource/blog2.jpg" alt="" />
+                    <div class="mediic-hover-box hover-bx"></div>
+                    <div class="mediic-hover-box hover-bx2"></div>
+                    <div class="mediic-hover-box hover-bx3"></div>
+                    <div class="mediic-hover-box hover-bx4"></div>
+                  </div>
+                  <div class="blog-content">
+                    <div class="blogs-category">
+                      <ul>
+                        <li class="blg-date">APRIL 10, 2024</li>
+                        <li class="blg-admin">AUTHOR</li>
+                      </ul>
+                    </div>
+                    <div class="blog-title">
+                      <h2 class="cursor-scale small">
+                        <a href="blog-details.html"
+                          >How to maintain Patient for Better Surgery</a
+                        >
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="blog-single-box" data-aos="fade-up">
+                  <div class="blog-thumb">
+                    <img src="assets/images/resource/blog3.jpg" alt="" />
+                    <div class="mediic-hover-box hover-bx"></div>
+                    <div class="mediic-hover-box hover-bx2"></div>
+                    <div class="mediic-hover-box hover-bx3"></div>
+                    <div class="mediic-hover-box hover-bx4"></div>
+                  </div>
+                  <div class="blog-content">
+                    <div class="blogs-category">
+                      <ul>
+                        <li class="blg-date">APRIL 10, 2024</li>
+                        <li class="blg-admin">ADMIN</li>
+                      </ul>
+                    </div>
+                    <div class="blog-title">
+                      <h2 class="cursor-scale small">
+                        <a href="blog-details.html"
+                          >Most Popular Advises for Kids Happy & Smile Life</a
+                        >
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 				</div> -->
 				<!--==================================================-->
 				<!-- End Blog Section -->
@@ -1165,9 +1389,7 @@
 										<img src="assets/images/resource/bag.png" alt="" />
 									</div>
 									<div class="subscribe-title">
-										<h1 class="cursor-scale small">
-											Since 1998 We're working Medical group more than 1200+ Patient
-										</h1>
+										<h1 class="cursor-scale small">Since 1907</h1>
 									</div>
 								</div>
 							</div>
@@ -1205,8 +1427,9 @@
 									</div>
 									<div class="company-info-desc">
 										<p>
-											Completely promote interdependent systems for Latest update news this
-											Medical.
+											One of Nigeria's leading healthcare institutions with an outstanding
+											reputation for delivering excellent clinical services. Providing quality
+											patient-centered, responsive, and technology-driven care.
 										</p>
 									</div>
 									<form>
@@ -1258,15 +1481,15 @@
 									<h4 class="widget-title">Contacts</h4>
 									<div class="footer-mediic-contact">
 										<div class="place-location">
-											<p>102/ B Street, New Elephant Road, Sandigo, USA</p>
+											<p>K/m 8 old Onitsha Enugu Road, Ogiri Anambra State Nigeria</p>
 										</div>
 										<div class="mediic-info">
-											<h5>Email-US</h5>
-											<p>example@gmail.com</p>
+											<h5>Emergency Contact</h5>
+											<p>+234 806 991 2996</p>
 										</div>
 										<div class="mediic-info">
-											<h5>Call Now</h5>
-											<p>+123 (4567) - 890</p>
+											<h5>Phone Numbers</h5>
+											<p>08065984191, 08068516722, 0813 363 5001</p>
 										</div>
 									</div>
 								</div>
@@ -1299,7 +1522,10 @@
 							</div>
 							<div class="col-lg-6 col-md-6">
 								<div class="mediic-company-desc text-right">
-									<p>This is a sample website - mediic ©2024 - All Rights Reserved</p>
+									<p>
+										Iyienu Mission Hospital - HealthCare Foundation. University on the Niger
+										Teaching Hospital ©2024 - All Rights Reserved
+									</p>
 								</div>
 							</div>
 						</div>
@@ -1379,19 +1605,20 @@
 											<h2>Contact Info</h2>
 											<ul class="list-style-one">
 												<li>
-													<span><i class="bi bi-envelope"></i></span>Chicago 12, Melborne
-													City, USA
+													<span><i class="bi bi-geo-alt"></i></span>K/m 8 old Onitsha Enugu
+													Road, Ogiri Anambra State Nigeria
 												</li>
 												<li>
-													<span><i class="bi bi-telephone-forward"></i></span>(+001)
-													123-456-7890
+													<span><i class="bi bi-telephone-forward"></i></span>+234 806 991
+													2996
 												</li>
 												<li>
-													<span><i class="bi bi-geo-alt"></i></span>Example.com
+													<span><i class="bi bi-envelope"></i></span
+													>info@iyienumissionhospital.com
 												</li>
 												<li>
-													<span><i class="bi bi-clock"></i></span>Week Days: 09.00 to 18.00
-													Sunday: Closed
+													<span><i class="bi bi-clock"></i></span>24/7 Emergency Services
+													Available
 												</li>
 											</ul>
 										</div>
